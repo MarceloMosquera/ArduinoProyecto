@@ -1,11 +1,12 @@
 #include <Servo.h>
 
-#define PIN_BARRIER_SERVO 3
+#define PIN_BARRIER_SERVO 5
 #define PIN_PEDESTRIAN_SENSOR A5
-#define PIN_GREEN_LED 5
-#define PIN_RED_LED 6
+#define PIN_GREEN_LED A0
+#define PIN_RED_LED A1
 #define TRIGGER_PIN 2
 #define ECHO_PIN 4
+#define SOUND_PIN 3
 
 #define STATE_VEHICULES 0
 #define STATE_TRAIN 1
@@ -137,7 +138,6 @@ void inPedestriansState() {
     beep(false);
 }
 void outPedestriansState() {
-    clearDisplay();
 }
 void inTrainState() {
     closeBarrier();
@@ -148,6 +148,7 @@ void outTrainState() {
 
 void doPedestriansSignals() {
     counter(false);
+    beep(false);
     if (lastDigit < 5 ) {
         greenTrafficLight(true);
         beep(true);

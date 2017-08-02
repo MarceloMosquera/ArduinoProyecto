@@ -7,10 +7,6 @@ void counter(bool show) {
     unsigned long currentMillis = millis();
     if (currentMillis - previousMillisDisplay >= 1000) {
         previousMillisDisplay = currentMillis;
-        /*if (show) {
-            for (int i = 0 ; i < 8 ; i++)
-                digitalWrite(i + PIN_DISPLAY_INIT, !bitRead( Digit[lastDigit], i) );
-        }*/
         lastDigit--;
     } 
 }
@@ -61,14 +57,18 @@ void greenTrafficLight(bool hurry) {
     digitalWrite(PIN_RED_LED, LOW);
 }
 
-void clearDisplay() {
-    /*for (int i = 0 ; i < 8 ; i++)
-        digitalWrite(i + PIN_DISPLAY_INIT, HIGH );
-    */
-}
-
+unsigned long previousMillisSound = 0;
 void beep(bool hurry) {
-
+    unsigned long currentMillis = millis();
+    if(hurry) {
+       if (currentMillis - previousMillisSound >= 200) {
+            tone(SOUND_PIN, 500, 10);
+       }
+    } else {
+       if (currentMillis - previousMillisSound >= 1000) {
+            tone(SOUND_PIN, 1000, 10);
+       }
+    }
 }
 
 void closeBarrier(){
