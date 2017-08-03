@@ -13,3 +13,5 @@
 - 1 10 Kohm resistance
 
 ## Diagrama
+
+![alt text](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/diagrama.png)
