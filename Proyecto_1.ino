@@ -37,13 +37,17 @@ void setup(){
     Serial.begin(9600);
     pinMode(PIN_PEDESTRIAN_SENSOR, INPUT);
     myservo.attach(PIN_BARRIER_SERVO);
+
     pinMode(PIN_RED_LED, OUTPUT); 
     pinMode(PIN_GREEN_LED, OUTPUT); 
+
     pinMode(TRIGGER_PIN, OUTPUT); 
     pinMode(ECHO_PIN, INPUT); 
 
     openBarrier();
     redTrafficLight();
+    
+    measurementsInit();
 }
 
 void loop(){
@@ -123,7 +127,7 @@ void loop(){
             break;
 
     }
-    //delay(500);
+    delay(100);
 }
 
 void outVehiculesState() {
@@ -181,7 +185,7 @@ bool checkPedestrians() {
 
 bool checkTrain() {
     //checks the train sensor
-    if (measureMedia() < 100) {
+    if (measureMedia() < 10) {
         Serial.println("Train happens");
         return true;
     } 
