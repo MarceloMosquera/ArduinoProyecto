@@ -148,6 +148,7 @@ void inTrainState() {
     redTrafficLight();
 }
 void outTrainState() {
+    delay(2000);
 }
 
 void doPedestriansSignals() {

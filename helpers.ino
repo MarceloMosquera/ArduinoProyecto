@@ -35,11 +35,13 @@ void beep(bool hurry) {
     unsigned long currentMillis = millis();
     if(hurry) {
        if (currentMillis - previousMillisSound >= 200) {
+           previousMillisSound = currentMillis;
             tone(SOUND_PIN, 500, 50);
        }
     } else {
        if (currentMillis - previousMillisSound >= 1000) {
-            tone(SOUND_PIN, 500, 100);
+           previousMillisSound = currentMillis;
+            tone(SOUND_PIN, 1500, 100);
        }
     }
 }

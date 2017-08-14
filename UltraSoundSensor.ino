@@ -28,7 +28,7 @@ unsigned int measureMedia()
     }
     measurements[DISTANCE_MAX_READS - 1] = measure();
     mean += measurements[DISTANCE_MAX_READS - 1];
-    Serial.println(String("measureMedia:") + mean);
+    //Serial.println(String("measureMedia:") + mean);
     return mean /= DISTANCE_MAX_READS;
 }
 
