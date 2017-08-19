@@ -48,10 +48,10 @@ void beep(bool hurry) {
 
 void closeBarrier(){
     Serial.println("closeBarrier");
-	myservo.write(0); 
+	myservo.write(10); 
 }
 
 void openBarrier(){
     Serial.println("openBarrier");
-	myservo.write(90);
+	myservo.write(80);
 }
