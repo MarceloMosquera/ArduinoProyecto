@@ -20,4 +20,7 @@
 ![Interno](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/final-adentro.jpg)
 
 ## Video
-![Video](https://youtu.be/C5TyPwFd71U)
+<!-- ![Video](https://youtu.be/C5TyPwFd71U) -->
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=C5TyPwFd71U
+" target="_blank"><img src="http://img.youtube.com/vi/C5TyPwFd71U/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
