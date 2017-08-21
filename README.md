@@ -15,3 +15,11 @@
 ## Diagrama
 
 ![alt text](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/diagrama.png)
+
+## Fotos
+
+![alt text](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/final-afuera.jpg)
+
+(https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/final-adentro.jpg)
+
+## Video(https://youtu.be/C5TyPwFd71U)
