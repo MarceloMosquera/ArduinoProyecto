@@ -13,13 +13,11 @@
 - 1 10 Kohm resistance
 
 ## Diagrama
-
-![alt text](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/diagrama.png)
+![Diagrama](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/diagrama.png)
 
 ## Fotos
+![Externo](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/final-afuera.jpg)
+![Interno](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/final-adentro.jpg)
 
-![alt text](https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/final-afuera.jpg)
-
-(https://github.com/MarceloMosquera/ArduinoProyecto/blob/master/final-adentro.jpg)
-
-## Video(https://youtu.be/C5TyPwFd71U)
+## Video
+![Video](https://youtu.be/C5TyPwFd71U)
